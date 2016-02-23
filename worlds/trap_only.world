@@ -15,7 +15,8 @@
                 <collision name="trap_collision">
                     <geometry>
                         <mesh>
-                            <uri>model://worlds/meshes/Trap_Assembly.STL</uri>
+                            <uri>model://worlds/meshes/trap_assy_m.STL</uri>
+
                             <!-- <uri>model://trap_assy_small.stl</uri> -->
                         </mesh>
                     </geometry>
@@ -32,7 +33,8 @@
                     <transparency>1</transparency>
                     <geometry>
                         <mesh>
-                            <uri>model://worlds/meshes/Trap_Assembly.STL</uri>
+                            <uri>model://worlds/meshes/trap_assy_m.STL</uri>
+
                             <!-- <uri>model://trap_assy_small.stl</uri> -->
                         </mesh>
                     </geometry>

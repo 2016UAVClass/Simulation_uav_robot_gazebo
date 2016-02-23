@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <world name="default">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        
+        <model name="trap_v1">
+            <pose> 0 0 0 0 0 0 </pose>
+            <static>true</static>
+            <link name ="trap_link">
+                <collision name="trap_collision">
+                    <geometry>
+                        <mesh>
+                            <uri>model://worlds/meshes/Trap_Assembly.STL</uri>
+                            <!-- <uri>model://trap_assy_small.stl</uri> -->
+                        </mesh>
+                    </geometry>
+                    <!--
+                    <surface>
+                    </surface>
+                    <contact>
+                    </contact>
+                    </surface>
+                    -->
+                </collision>
+                <visual name ="visual">
+                    <cast_shadows>true</cast_shadows>
+                    <transparency>1</transparency>
+                    <geometry>
+                        <mesh>
+                            <uri>model://worlds/meshes/Trap_Assembly.STL</uri>
+                            <!-- <uri>model://trap_assy_small.stl</uri> -->
+                        </mesh>
+                    </geometry>
+                </visual>
+            </link>
+        </model>
+    </world>
+</sdf>
